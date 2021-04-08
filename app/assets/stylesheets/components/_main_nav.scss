@@ -15,49 +15,64 @@
 .left-nav {
   
   > ul {
+    padding: 6px;
+    display: flex;
+    align-items: center;
+
     > li {
       text-transform: uppercase;
       font-family: $sans-serif;
       font-size: 11px;
+      padding: 6px;
+      align-items: center;
+      display: flex;
+
+      > span {
+        align-items: center;
+        padding: 6px;
+      }
     }
   }
   
-  span {
-    
-  }
 }
-
-// #cog {
-// }
 
 .right-nav  {
   
   > ul {
     
-    > li > button {
+    > li > .right_side_btn {
       text-transform: uppercase;
       font-family: $sans-serif;
       font-size: 11px;
       border: none;
+      background: $light-blue;
+      color: white;
+      padding: 6px;
+      border-radius: 3px;
     }
     
     > li:last-of-type {
-      
     }
   }
   
-  i {
-    // display: flex;
-    // align-items: center;
-    position: relative;
-    top: 5px;
-    left: 5px;
-    // display: table-cell;
-    // vertical-align: middle;
+  li {
+    padding: 6px;
+    align-items: center;
   }
+
+  i {
+    padding: 6px;
+  }
+}
+
+.settings_button {
+  padding: 6px;
+  border: none;
+  background-color: $lightest-gray;
+  // background: $lightest-gray;
 }
 
 .left-nav > ul > li:hover,
 .right-nav > ul > li:last-of-type:hover {
-
+  background-color: $light-gray;
 }
