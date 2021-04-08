@@ -1,3 +1,5 @@
+@import "base/colors";
+
 /* PHASE 1: Reset */
 
 html, body, header, nav, h1, a,
@@ -15,7 +17,7 @@ span, article, footer, time, small {
   // text-decoration:
   // vertical-align:
   box-sizing: inherit;
-  background: lightest-gray;
+  background: $lightest-gray;
 }
 
 ol, ul {
