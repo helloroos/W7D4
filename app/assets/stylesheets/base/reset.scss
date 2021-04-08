@@ -5,27 +5,30 @@ ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
-  // margin:
-  // padding:
+  margin: 0px;
+  padding: 0px 6px 13px 6px;
   // border:
   // outline:
-  // font:
-  // color:
+  font: "nyt-cheltenham",georgia,"times new roman",times,serif;
+  color: black;
   // text-align:
   // text-decoration:
   // vertical-align:
-  // box-sizing:
-  // background:
+  box-sizing: inherit;
+  background: lightest-gray;
 }
 
 ol, ul {
   // list-style:
+  list-style-type: none;
+  cursor: pointer;
 }
 
+
 img {
-  // display:
-  // width:
-  // height:
+  display: block;
+  width: 100%;
+  height: auto
 }
 
 input[type="password"],
@@ -46,10 +49,17 @@ button {
 button,
 input[type="submit"] {
   // cursor:
+  cursor: pointer;
 }
 
 /* Clearfix */
 
 .group:after {
   // ...
+  overflow: auto;
 }
+
+
+// .clearfix {
+//   overflow: auto;
+// }
