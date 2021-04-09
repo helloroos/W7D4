@@ -27,6 +27,10 @@
 	ul {
 		display: flex;
 	}
+
+	li {
+		justify-content: space-between;
+	}
 }
 
 .logo {
@@ -44,6 +48,10 @@
 	li {
 		margin-left: 10px;
 		border-right: 1px solid $light-gray;
+	}
+
+	a {
+		text-decoration: underline;
 	}
 
 	button {
@@ -70,5 +78,20 @@
 
 	strong {
 		color: green;
+	}
+}
+
+ol, ul {
+	list-style-type: none;
+    cursor: pointer;
+    flex-direction: row;
+    display: flex;
+
+	> li > a {
+		text-decoration: none;
+	}
+
+	> li:hover {
+		text-decoration: underline;
 	}
 }
