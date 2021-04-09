@@ -1,1 +1,15 @@
 // Use the gear_dropdown.png screenshot as a style guide
+
+ #settings_btn {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+}
+
+#settings-btn:hover .drop-down-content {
+    display: block;
+}
