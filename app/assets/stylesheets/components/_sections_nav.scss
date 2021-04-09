@@ -1,0 +1,25 @@
+.sections-nav li {
+  padding: 7px;
+  background-color: none;
+}
+
+div {
+  width: 100%;
+  border-top: 2px black solid;
+  display: flex;
+  justify-content: center;
+  box-sizing: unset;
+}
+
+button:hover {
+  background-color: $light-gray;
+}
+
+a {
+  font-family: $sans-serif;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: underline;
+}

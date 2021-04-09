@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-bottom: 2px solid black;
+	border-bottom: 1px solid $light-gray;
 	position: relative;
 }
 
@@ -15,6 +15,10 @@
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+
+	li:first-child {
+		font-weight: bold;
+	}
 
 	a {
 		margin: 0 5px;
@@ -46,30 +50,42 @@
 	margin-bottom: 10px;
 
 	li {
-		margin-left: 10px;
+		// margin-left: 10px;
+		// margin-right: 10px;
 		border-right: 1px solid $light-gray;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
+	
+	li:last-child {
+		border-right: 0px solid $light-gray;
 	}
 
 	a {
 		text-decoration: underline;
 	}
-
+	
 	button {
 		background: none;
 		padding: 0px;
 		color: #000;
+		font-family: $sans-serif;
 		font-weight: normal;
 		border: none;
+		font-size: 11px;
 	}
 
 	button:hover {
 		background-color: $lightest-gray;
+		border-radius: 3px;
 	}
 
 	a,
 	button, 
 	time {
-		margin-right: 10px;
+		// margin-right: 10px;
 	}
 
 	i {
@@ -78,6 +94,7 @@
 
 	strong {
 		color: green;
+		background: none;
 	}
 }
 
@@ -91,7 +108,10 @@ ol, ul {
 		text-decoration: none;
 	}
 
-	> li:hover {
+}
+
+.language-nav {
+		li:hover {
 		text-decoration: underline;
 	}
 }
